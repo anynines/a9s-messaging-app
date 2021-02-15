@@ -1,0 +1,1 @@
+export VCAP_SERVICES='{ "a9s-rabbitmq36": [ { "credentials": { "host": "localhost", "password": "quest", "port": 5672, "uri": "amqp://guest:guest@localhost:5672", "username": "guest" } } ] }'
