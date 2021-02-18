@@ -22,11 +22,6 @@ Create a service on the [a9s PaaS](https://paas.anynines.com)
 $ cf create-service a9s-messaging38 messaging-single-small mymessaging
 ```
 
-Build the app locally
-```
-$  GOOS=linux GOARCH=amd64 CGO_ENABLED=0 make
-```
-
 Push the app
 ```
 $ cf push --no-start

@@ -1,10 +1,17 @@
 applications:
-- name: messaging-app
-  memory: 128M
+- name: messaging-receiver
+  memory: 64M
   random-route: true
   instances: 1
-  path: .
-  buildpack: binary_buildpack
-  command: ./messaging-app
-  env:
-    GOPACKAGENAME : messaging-app
+  path: ./receiver
+  buildpack: https://github.com/cloudfoundry/go-buildpack
+  services:
+    - ((service))
+- name: messaging-sender
+  memory: 64M
+  random-route: true
+  instances: 1
+  path: ./sender
+  buildpack: https://github.com/cloudfoundry/go-buildpack
+  services:
+    - ((service))
