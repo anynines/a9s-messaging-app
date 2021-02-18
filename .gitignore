@@ -1,2 +1,5 @@
 main
-a9s-rabbitmq-app
+a9s-messaging-app
+messaging-receiver
+messaging-sender
+messaging-app

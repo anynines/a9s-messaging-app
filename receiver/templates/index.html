@@ -1,0 +1,30 @@
+{{define "title"}}<title>MyMessaging Blog/ Index</title>{{end}}
+{{define "body"}}
+<div class="container content">
+	<div class="row">
+		<div class="col-lg-9">
+			<div class="page-header">
+				<h1>a9s Messaging Receiver</h1>
+			</div>
+			<div class="posts">
+					{{range $key,$value := . }}
+						<div class="post">
+							<div class="title">
+								<h4>Message {{$key}}</h4>
+							</div>
+							<div class="post-body">
+								{{$value.Message}}
+							</div>
+							<div class="post-footer">
+								<span class="timestamps">
+									Created at: {{$value.ReceivedAt}},
+								</span>
+							</div>
+		     		</div>
+					{{end}}
+				</table>
+			</div> <!-- post -->
+		</div> <!-- col-lg-9 -->
+	</div><!--/row-->
+</div> <!-- /container -->
+{{end}}

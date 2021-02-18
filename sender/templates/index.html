@@ -1,0 +1,23 @@
+{{define "title"}}<title>MyRabbitMQ Blog/ Add</title>{{end}}
+{{define "body"}}
+
+<div class="container content">
+	<div class="row">
+		<div class="col-lg-9">
+			<div class="page-header">
+				<h1>a9s Messaging Sender</h1>
+			</div>
+      <form class="form-horizontal post" id="new_post" action="/messages/send" method="post">
+        <p>Message:<br>
+            <textarea rows="4" cols="50" name="message"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit"/>
+        </p>
+      </form>
+		</div> <!-- col-lg-9 -->
+	</div><!--/row-->
+</div> <!-- /container -->
+
+
+{{end}}
