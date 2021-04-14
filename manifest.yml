@@ -8,7 +8,7 @@ applications:
   services:
     - ((service))
 - name: messaging-sender
-  memory: 64M
+  memory: 128M
   random-route: true
   instances: 1
   path: ./sender

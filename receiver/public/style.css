@@ -182,3 +182,7 @@ input {
 .actions .btn {
   margin-left: var(--spacing-lg);
 }
+
+.post__footer {
+  opacity: .5;
+}

@@ -182,3 +182,15 @@ input {
 .actions .btn {
   margin-left: var(--spacing-lg);
 }
+
+textarea {
+  padding: 12px;
+  font-family: sans-serif;
+  width: 100%;
+  background-color: var(--light);
+  border-radius: var(--radius);
+  resize: none;
+  outline: none;
+  margin: 12px 0;
+  border: 1px solid rgba(0,0,0,.25);
+}
